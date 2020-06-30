@@ -1,0 +1,8 @@
+User-Agent: *
+Disallow: /cgi-bin/
+Allow: /
+Allow: /blog/
+
+Sitemap: http://alexander-clark.com/blog/sitemap_index.xml
+
+Sitemap: http://alexander-clark.com/sitemap.xml
