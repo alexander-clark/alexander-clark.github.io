@@ -1,154 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Alexander Clark</title>
-		<meta charset="UTF-8">
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		
-		  ga('create', 'UA-66930233-1', 'auto');
-		  ga('send', 'pageview');
-		</script>
-		<style>
-			a:link, a:visited, a:hover {
-				color: #39a;
-				text-decoration: none;
-			}
-			a:hover span {
-				border-bottom: 1px dashed;
-			}
-			body {
-				background-color: #ccc;
-				font-family: "Helvetica Neue", "Helvetica", sans-serif;
-				margin: 0;
-			}
-			h1 {
-				font-weight: 200;
-				letter-spacing: .08em;
-			}
-			h2 {
-				color: #666;
-				font-size: 1.1em;
-				font-weight: 400;
-				letter-spacing: .1em;
-			}
-			h1+h2 {
-				margin-top: -0.5em;
-			}
-			h3 {
-				font-size: 1em;
-				font-weight: normal;
-			}
-			* + h3 {
-				margin-top: 1.5em;
-			}
-			#photo {
-				float: right;
-			}
-			#photo img {
-				border-radius: 50%;
-				height: 5em;
-				width: 5em;
-			}
-			p {
-				font-weight: 200;
-				margin: 3em 0;
-				letter-spacing: .06em;
-			}
-			#stripe {
-				background-color: #eee;
-				height: 100vh;
-				margin: 0 auto;
-				width: 40em;
-			}
-			#stripe > div {
-				margin: 0;
-				padding: 2em;
-			}
-			.social {
-				font-size: .9em;
-			}
-			.social img {
-				height: 20px;
-				vertical-align: middle;
-				width: 20px;
-			}
-			.social a {
-				color: #999;
-			}
-                        .divided {
-                                display: flex;
-                                padding: 0px;
-                        }
-                        .divided div {
-                                width: 50%;
-                        }
-			ul {
-				line-height: 1.8em;
-				list-style-type: none;
-				padding: 0;
-			}
-			ul.social-list li {
-				display: inline
-			}
-		</style>
-	</head>
-	<body itemscope itemtype="http://schema.org/WebPage">
-		<div id="stripe">
-			<div itemprop="mainEntity" itemscope itemtype="http://schema.org/Person">
-				<div itemprop="image" itemscope itemtype="http://schema.org/ImageObject" id="photo">
-					<img src="0019b4c.jpg" itemprop="contentUrl">
-				</div>
-				<a itemprop="url" href="https://alexander-clark.com">
-				  <h1 itemprop="name"><span itemprop="givenName">Alexander</span> <span itemprop="familyName">Clark</span></h1>
-				</a>
-				<h2>Tagline goes here</h2>
-				<p itemprop="description">Hi. I&apos;m Alexander and I write code.</p>
-				
-				<div>
-				<ul class="social-list">
-					<li class="social">
-						<a itemprop="sameAs" href="https://twitter.com/atheclark"><img src="twitter-sociocon.png"></a>
-					</li>
-					<li class="social">
-						<a itemprop="sameAs" href="https://github.com/alexander-clark"><img src="github-sociocon.png"></a>
-					</li>
-					<li class="social">
-						<a itemprop="sameAs" href="https://www.linkedin.com/in/alexanderdclark"><img src="linkedin-sociocon.png"></a>
-					</li>
-				</ul>
-				</div>
-                                <div class="divided">
-                                <div>
-                                <h3>Around the web:</h3>
-				<ul>
-					<li>
-						<a itemprop="sameAs" href="https://alexander-clark.com/blog">Blog</a>
-					</li>
-					<li>
-						<a itemprop="sameAs" href="https://alexander-clark.com/blog/resume">R&eacute;sum&eacute;</a>
-					</li>
-				</ul>
-                                <h3>Things I've built:</h3>
-                                <ul>
-                                        <li><a href="https://github.com/alexander-clark/ac-grid">ac-grid</a></li>
-                                        <li><a href="https://github.com/alexander-clark/ac-recurrence">ac-recurrence</a></li>
-                                </ul>
-                                </div>
-                                <div>
-                                <h3>Talks I've given:</h3>
-                                <ul>
-                                        <li><a href="https://speakerdeck.com/alexanderclark/building-with-rack">Building with Rack</a></li>
-                                        <li><a href="https://speakerdeck.com/alexanderclark/docker-what-it-is-and-why-you-should-care">Docker</a></li>
-                                        <li><a href="https://speakerdeck.com/alexanderclark/off-the-rails-patterns-for-fixing-fat-models-out-of-controllers-and-other-rails-problems">Off the Rails</a></li>
-					<li>Evolutionary Vocation</li>
-                                </ul>
-                                </div>
-                                </div>
-			</div>
-		</div>
-	</body>
+  <head>
+    <meta charset="utf-8">
+    <title>Alexander Clark</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-66930233-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <nav class="navbar demo__info">
+      <div>&nbsp;</div>
+      <ul>
+        <li>
+          <a href="https://twitter.com/atheclark"><img class="icon" alt="Twitter" src="twitter.svg"></a>
+        </li>
+        <li>
+          <a href="https://github.com/alexander-clark"><img class="icon" alt="GitHub" src="github.svg"></a>
+        </li>
+        <li>
+          <a href="https://stackoverflow.com/users/2812480/alexander-clark"><img alt="Stack Overflow" class="icon" src="stackoverflow.svg"></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/alexanderdclark/"><img class="icon" alt="LinkedIn" src="linkedin.svg"></a>
+        </li>
+      </ul>
+    </nav>
+    <section>
+      <h1>Alexander Clark</h1>
+      <h5>Software Engineering Manager & Full-Stack Developer</h5>
+      <p>Currently Lead Developer at WeInfuse</p>
+      <h2>About</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum sit amet odio ac convallis. Nulla et odio pretium, aliquam nisi eu, laoreet erat. Vestibulum scelerisque lobortis elit, vitae varius tortor facilisis finibus. Aliquam nec elementum diam, sed blandit enim. Morbi ac augue mattis, vehicula arcu non, tincidunt dui. Nunc malesuada dignissim est, non ullamcorper orci posuere eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+      <h2>Resume</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum sit amet odio ac convallis. Nulla et odio pretium, aliquam nisi eu, laoreet erat. Vestibulum scelerisque lobortis elit, vitae varius tortor facilisis finibus. Aliquam nec elementum diam, sed blandit enim. Morbi ac augue mattis, vehicula arcu non, tincidunt dui. Nunc malesuada dignissim est, non ullamcorper orci posuere eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+    </section>
+  </body>
 </html>
