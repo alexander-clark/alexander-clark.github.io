@@ -27,8 +27,16 @@ body {
 #main {
   /* height: 100vh; */
   height: 100%;
-  overflow-y: scroll;
+  overflow-y: hidden;
   scroll-behavior: smooth;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+#inner {
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 .parallax__group + section h2 {
@@ -36,7 +44,7 @@ body {
 }
 
 .parallax__group.short {
-  height: calc(100vh - 75px);
+  height: 100vh;
 }
 
 a:link, a:hover, a:active, a:visited {
@@ -93,7 +101,7 @@ abbr {
 
 .parallax {
     height: 500px; /* fallback for older browsers */
-    height: 100vh;
+    /* height: 100vh; */
     overflow-x: hidden;
     overflow-y: auto;
     -webkit-perspective: 300px;
@@ -159,24 +167,46 @@ abbr {
   font-weight: 400;
   font-size: 1.25rem;
 }
-  #group2 {
-    z-index: 3; /* slide under groups 1 and 3 */
+
+#top .title {
+  background-color: rgba(255,255,255,0.5);
+  text-align: center;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  #top .title {
+    background-color: rgba(0,0,0,0.5);
   }
-  #group2 .parallax__layer--back {
-    /* background: rgb(123,210,102); */
-    background: url(IMG_1170.JPG) no-repeat center bottom fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
+}
+/* #top .title div:first-child { */
+  /* padding-top: 10em; */
+/* } */
+
+#top h1 {
+  padding-top: 2rem;
+  font-weight: bold;
+}
+
+#top {
+  z-index: 3; /* slide under groups 1 and 3 */
+}
+#top .parallax__layer--back {
+  /* background: rgb(123,210,102); */
+  background: url(IMG_1170.JPG) no-repeat center bottom; //fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 #about {
   z-index: 4; /* slide over group 2 and 4 */
+  /* height: 100vh; */
+  height: calc(100vw * -0.001429 * 100vh);
 }
 
 #about .parallax__layer--base {
-  background: #ccc; /* rgb(153,216,101); */
+  background: white; /*rgb(184,223,101);*/
 }
 
 @media screen and (prefers-color-scheme: dark) {
@@ -190,7 +220,7 @@ abbr {
 }
 
 #talks .parallax__layer--deep {
-  background: white; /*rgb(184,223,101);*/
+  background: #ccc; /* rgb(153,216,101); */
 }
 
 @media screen and (prefers-color-scheme: dark) {
@@ -204,7 +234,7 @@ abbr {
 }
 
 #projects .parallax__layer--base {
-  background: rgb(214,229,100);
+  background: white;
 }
 
 @media screen and (prefers-color-scheme: dark) {
@@ -213,7 +243,7 @@ abbr {
   }
 }
 
-nav {
+.navbar {
   padding: 0 2rem;
 }
 
@@ -222,7 +252,20 @@ section {
 }
 
 @media (min-width: 1024px) {
-  nav {
+  .navbar {
+    padding: 0 10rem;
+  }
+
+  section {
+    padding: 0 10rem;
+  }
+
+  .parallax__layer {
+    padding: 0 10em;
+  }
+}
+@media (min-width: 1200px) {
+  .navbar {
     padding: 0 20rem;
   }
 
@@ -244,7 +287,6 @@ section {
 
 .horizontal-list ul {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 0;
@@ -252,6 +294,42 @@ section {
 
 .navbar.horizontal-list ul {
   justify-content: flex-end;
+  margin: 0;
+}
+
+.menu {
+  display: none;
+  margin-left: 1em;
+}
+@media (max-width: 1024px) {
+  /* .navbar.horizontal-list ul { */
+  .dropdown ul {
+    list-style-type: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    background: #eee;
+    z-index: 5;
+    position: absolute;
+    right: 0;
+    top: 100%;
+  }
+  li.dropdown {
+    position: relative;
+  }
+  .dropdown ul {
+    display: none;
+  }
+  .dropdown:hover > ul {
+    display: list-item;
+    text-align: right;
+  }
+  .dropdown li {
+    margin-right: 1rem;
+  }
+  .menu {
+    display: list-item;
+  }
 }
 
 .horizontal-list li {

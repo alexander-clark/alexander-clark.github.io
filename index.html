@@ -18,27 +18,37 @@
   <body>
     <div class="container">
     <nav class="navbar horizontal-list">
-      <div>&nbsp;</div>
+      <div>
+        <a href="#top">
+          &uarr;
+        </a>
+      </div>
       <ul>
-        <li>
-          <a href="#about">about</a>
-        </li>
-        <li>
-          <a href="#talks">talks</a>
-        </li>
-        <li>
-          <a href="#projects">projects</a>
-        </li>
-        <li>
-          <a href="https://alexander-clark.com/blog">blog</a>
-        </li>
-        <li>
-          <a href="https://alexander-clark.com/blog/resume">r&eacute;sum&eacute;</a>
+        <li class="dropdown">
+          <a class="menu">&#9776;</a>
+          <ul>
+            <li>
+              <a href="#about">about</a>
+            </li>
+            <li>
+              <a href="#talks">talks</a>
+            </li>
+            <li>
+              <a href="#projects">projects</a>
+            </li>
+            <li>
+              <a href="https://alexander-clark.com/blog">blog</a>
+            </li>
+            <li>
+              <a href="https://alexander-clark.com/blog/resume">r&eacute;sum&eacute;</a>
+            </li>
+          </ul>
         </li>
       </ul>
     </nav>
     <div id="main" class="parallax" role="main">
-      <header id="group2" class="parallax__group">
+      <div id="inner">
+      <header id="top" class="parallax__group">
         <div class="parallax__layer parallax__layer--base">
           <div class="title">
         <h1 class="centered">Alexander Clark</h1>
@@ -148,6 +158,7 @@
         <div class="parallax__layer parallax__layer--base">
         </div>
       </section>
+      </div>
     </div>
     </div>
   </body>
