@@ -208,8 +208,10 @@ section {padding: 0 2rem;}
 
 /*** Navbar ***/
 .navbar {padding: 0 2rem;}
+.navbar ul {margin: 0;}
 @media (min-width: 1024px) {
   .navbar {padding: 0 10rem;}
+  .navbar ul {margin: 10px;}
 }
 @media (min-width: 1200px) {
   .navbar {padding: 0 20rem;}
@@ -219,6 +221,7 @@ section {padding: 0 2rem;}
 .hamburger-menu {
   display: none;
   margin-left: 1em;
+  cursor: pointer;
 }
 @media (max-width: 1024px) {
   .hamburger-menu {display: list-item;}
@@ -239,7 +242,7 @@ section {padding: 0 2rem;}
   }
   li.dropdown {position: relative;}
   .dropdown ul {display: none;}
-  .dropdown:hover > ul {
+  .dropdown.is-active > ul {
     display: list-item;
     text-align: right;
   }
