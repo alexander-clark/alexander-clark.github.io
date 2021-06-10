@@ -157,6 +157,12 @@ section {padding: 0 2rem;}
 @media (min-width: 1200px) {
   .parallax__layer {padding: 0 20em;}
 }
+@media (min-width: 1440px) {
+  .content {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+}
 
 .parallax__layer--fore {
   -webkit-transform: translateZ(90px) scale(.7);
